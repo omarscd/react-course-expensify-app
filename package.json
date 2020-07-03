@@ -5,8 +5,10 @@
   "author": "Omar Saucedo",
   "license": "MIT",
   "scripts": {
-    "build": "webpack",
+    "build:dev": "webpack",
+    "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
+    "serve": "live-server public",
     "test": "jest --config=jest.config.json"
   },
   "dependencies": {
@@ -22,6 +24,7 @@
     "enzyme-adapter-react-16": "1.0.0",
     "enzyme-to-json": "3.0.1",
     "jest": "20.0.4",
+    "live-server": "^1.2.1",
     "moment": "2.18.1",
     "node-sass": "^4.14.1",
     "normalize.css": "7.0.0",
